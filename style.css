@@ -226,6 +226,18 @@
             transform: scale(1.05);
         }
 
+        .btn-linkedin {
+            border-color: var(--primary-blue);
+            color: var(--primary-blue);
+        }
+
+        .btn-linkedin:hover {
+            background: var(--primary-blue);
+            color: white;
+            box-shadow: 0 0 30px rgba(74, 103, 255, 0.7);
+            transform: scale(1.05);
+        }
+
         .btn-download {
             border-color: var(--cyber-yellow);
             color: var(--cyber-yellow);
@@ -333,7 +345,7 @@
             0%, 14%, 15%, 49%, 50%, 99%, 100% {
                 transform: translate(0);
             }
-            15%, 49% {
+            12%, 53% {
                 transform: translate(-2px, 2px);
             }
         }
