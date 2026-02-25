@@ -2,20 +2,23 @@
 
             const profileImg = document.getElementById('profileImg');
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // L'image entre dans l'écran : on ajoute la classe d'animation
-                        profileImg.classList.add('is-visible');
-                    } else {
-                        // On retire la classe pour que l'effet se rejoue à chaque fois qu'on remonte 
-                        profileImg.classList.remove('is-visible');
-                    }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // L'image entre dans l'écran : on ajoute la classe d'animation
+                profileImg.classList.add('is-visible');
+            } else {
+                // On retire la classe pour que l'effet se rejoue à chaque fois qu'on remonte 
+                profileImg.classList.remove('is-visible');
+            }
         });
     }, { threshold: 0.1 }); // Se déclenche dès que 10% de l'image est visible
-
         observer.observe(profileImg);
 
+            const title = document.querySelector('.glitch');
+            setTimeout(() => {
+                title.classList.add('reveal');
+            }, 3000);
         });
 
         function startGame() {

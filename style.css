@@ -351,7 +351,14 @@
         /* Glitch effect */
         .glitch {
             position: relative;
+            transform: translateX(-20px); /* Léger décalage vers la gauche */
             display: inline-block;
+            transition: opacity 1s ease-out, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glitch.reveal {
+            opacity: 1;
+            transform: translateX(0);
         }
 
         .glitch::before,
