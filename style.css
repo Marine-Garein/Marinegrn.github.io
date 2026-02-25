@@ -118,6 +118,8 @@
             z-index: 10;
         }
 
+
+        /* Profile sections */
         .profile-section {
             display: flex;
             align-items: center;
@@ -136,8 +138,24 @@
             animation: profileGlow 3s ease-in-out infinite alternate;
             object-fit: cover;
             object-position: center;
-            /* Garantit que l'image reste parfaitement circulaire */
+            /* Garantit que l'image reste circulaire */
             flex-shrink: 0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 5.8s cubic-bezier(0.22, 1, 0.36, 1); /* Fluidité de la courbe de vitesse */
+        }
+
+        .profile-image.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+            filter: drop-shadow(0 0 15px rgba(74, 103, 255, 0.5)); /* Effet "lueur" au chargement */
+        }
+
+        /* Petit effet de glitch au survol pour rester dans le thème */
+        .profile-image:hover {
+            filter: contrast(1.1) drop-shadow(0 0 20px #cb9228);
+            transform: scale(1.03);
+            cursor: crosshair;
         }
 
         @keyframes profileGlow {
