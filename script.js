@@ -37,7 +37,7 @@
         }
 
         function urlProfile() {
-            window.open('');
+            window.open('https://www.linkedin.com/in/marinegarein');
         }
 
         function downloadCV() {

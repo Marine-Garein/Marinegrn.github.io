@@ -333,6 +333,11 @@
             transition: all 0.3s ease;
         }
 
+        .nav-btn.linkedin {
+            border-color: var(--primary-blue);
+            color: var(--primary-blue);
+        }
+
         .nav-btn.lore {
             border-color: var(--cyber-yellow);
             color: var(--cyber-yellow);
