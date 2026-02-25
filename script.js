@@ -11,7 +11,8 @@
             });
         }
 
-        function backToMenu() {
+        function backToMenu(event) {
+            if (event) event.preventDefault();
             document.getElementById('menu').scrollIntoView({ 
                 behavior: 'smooth',
                 block: 'start'
