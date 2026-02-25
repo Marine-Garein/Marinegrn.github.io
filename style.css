@@ -4,6 +4,7 @@
             box-sizing: border-box;
         }
 
+/* Couleurs par défaut (mode sombre) */
         :root {
             --primary-blue: #4a67ff;
             --secondary-purple: #8a4fff;
@@ -14,6 +15,16 @@
             --darker-bg: #050505;
         }
 
+/* Couleurs pour le mode clair */ 
+[data-theme="light"] {
+    --bg-color: #f0f0f0;
+    --text-color: #1a1a1a;
+    --primary-blue: #2a47df;
+    --cyber-yellow: #a67210;
+    --grid-opacity: 0.05;
+    --gradient-start: #e0e0e0;
+    --gradient-mid: #ffffff;
+}
         html {
             scroll-snap-type: y mandatory;
             font-size: 1rem;
