@@ -17,14 +17,25 @@
 
 /* Couleurs pour le mode clair */ 
 [data-theme="light"] {
-    --bg-color: #f0f0f0;
-    --text-color: #1a1a1a;
     --primary-blue: #2a47df;
+    --secondary-purple: #6e30e3;
+    --accent-pink: #d61a5a;
+    --neon-green: #008f11;
     --cyber-yellow: #a67210;
-    --grid-opacity: 0.05;
-    --gradient-start: #e0e0e0;
-    --gradient-mid: #ffffff;
+    
+    /* Variables de surfaces */
+    --bg-main: #f0f2f5;
+    --bg-secondary: #ffffff;
+    --text-main: #1a1a1a;
+    --text-muted: #333333;
+    
+    /* Grille et effets */
+    --grid-color: rgba(0, 0, 0, 0.07);
+    --glow-opacity: 0.2;
+    --bg-gradient: linear-gradient(45deg, #e0e0e0, #f8f9fa, #e0e0e0);
+    --btn-bg: rgba(255, 255, 255, 0.8);
 }
+
         html {
             scroll-snap-type: y mandatory;
             font-size: 1rem;
