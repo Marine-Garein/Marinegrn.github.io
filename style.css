@@ -14,6 +14,10 @@
             --darker-bg: #050505;
         }
 
+        html {
+            scroll-snap-type: y mandatory;
+        }
+
         body {
             font-family: 'Fira Code', monospace;
             background: var(--dark-bg);
@@ -82,16 +86,15 @@
 
         /* Sections */
         .section {
-            height: 100vh;
+           position: relative;
+            width: 100%;
+            min-height: 100vh;
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
-            position: relative;
-            scroll-snap-align: start;
-        }
-
-        html {
-            scroll-snap-type: y mandatory;
+            align-items: center;
+            background: transparent !important; /* Crucial pour voir l'arrière-plan */
+            overflow: hidden;
         }
 
         /* Main Menu */
