@@ -19,6 +19,10 @@
             });
         }
 
+        function urlProfile() {
+            window.open('');
+        }
+
         function downloadCV() {
             const link = document.createElement('a');
             
